@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annabel's Lab 5 Page</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to my Lab 5!</h1>
+    </header>
+
+    <main>
+        <h2>Let's learn about adding audio and video through web design!</h2>
+
+        <h3>Video</h3>
+        <p>To add videos onto your webpage through HTML and you can add/control it more through JavaScript. Javascript allows you to prepare the webpage to display your content and add controls to allow the user adjust the video to their liking.</p>
+        <p>Enjoy this short video of dolphins.</p>
+
+        <video id="video" class="dolphins" controls>
+            <source src="video/dolphins.webm" type="video/webm" />
+            <source src="video/dolphins.mp4" type="video/mp4" />
+            <track id="en-dolphins" kind="captions" label="Dolphin (captions)" srclang="en" src="captions/dolphins.vtt">
+        </video>
+
+        
+        <div class="video-controls">
+            <button onclick="playPause()">Play/Pause</button> 
+        </div>
+
+
+        <h3>Audio</h3>
+        <p>You can also add audio through the same way you would with video. Check out the controls for this audio player below and you can switch from the two songs given, Luau Beat and Tropical Beat.</p>
+
+        <audio class="luau-beat" controls>
+            <source src="audio/luau-beat.mp3" type="audio/webm" />
+            <source src="audio/" type="audio/mp3" />
+        </audio>
+
+        <div class="audio-controls">
+            <button id="ff">Fast-Forward</button>
+            <button id="normal">Normal</button>
+            <button id="slo">Slow-Mo</button>
+            <select name="pick" id="pick">
+                <option value="">Pick A Song</option>
+                <option value="audio/luau-beat.mp3">Luau Beat</option>
+                <option value="audio/tropical-beat.mp3">Tropical Beat</option>
+            </select>
+        </div>
+    </main>
+
+    <footer>
+        <p>"This fictitious website was created as an academic exercise for the Diablo Valley College course, ARTDM-174: Web and Mobile Design With Java Script. In no way should this content be considered or used as a source of factual public information."</p>
+
+        <a class="home" href="/artdm174">Click Here To Go Back to Jump Page!</a>
+    </footer>
+    
+</body>
+</html>
